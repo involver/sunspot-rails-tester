@@ -39,7 +39,7 @@ module Sunspot
         end
       
         def starting
-          sleep(1)
+          sleep(0.2)
           Net::HTTP.get_response(URI.parse(uri))
           false
         rescue Errno::ECONNREFUSED
